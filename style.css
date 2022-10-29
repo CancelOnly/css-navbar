@@ -36,6 +36,7 @@ main {
     height: 100vh;
     position: fixed;
     background-color: var(--bg-primary);
+    transition: width 200ms ease;
 }
 
 .navbar-nav {
@@ -72,4 +73,26 @@ main {
 .nav-link svg {
     min-width: 2rem;
     margin: 0 1.5rem;    
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+.fa-primary {
+    color: cyan;
+}
+
+.fa-secondary { 
+    color: rgb(0, 132, 255);
+       
+}
+
+.fa-primary,
+.fa-secondary {
+    transition: var(--transition-speed);
 }
